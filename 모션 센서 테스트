@@ -1,0 +1,24 @@
+// 피에조 부저를 3번핀에 연결합니다.
+int buzzer = 5; 
+int motionSensor = 2; // 모션센서 out 2번 사용
+int pirState = LOW; //모션 감지 상태 체크
+int val = 0; //모션센서 상태를 숫자로 하려고
+
+ 
+void setup() {
+    pinMode(buzzer,OUTPUT);
+    pinMode(motionSensor , INPUT); // declare sensor as input
+  Serial.begin(9600);
+}
+ 
+void loop() {
+    //모션센서를 읽어오기
+  val = digitalRead(motionSensor); // read input value
+ // Serial.println(val);
+  if (val == 1 ){
+   tone(buzzer, 261, 2000); 
+  }
+else {
+     noTone(buzzer); 
+    }
+}
