@@ -1,4 +1,8 @@
-
+/*
+우리는 mkr1000으로 연습하고 있습니다.
+2020 공개SW 개발자 대회 주용성, 황찬우 학생 참여중 입니다.
+이메일: goldhwang08@naver.com
+*/
 #include <Arduino.h>
 #include <SPI.h>
 #include <WiFi101.h>
