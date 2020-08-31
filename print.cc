@@ -16,9 +16,9 @@ void setup(){
 }
  
 void loop(){
-  Serial.println(numX + numY + numA);     // "Hi roblox."
+  Serial.println(numX + numY + numA);     
   delay(1000);
-  Serial.println(s);     // "Hi roblox."
+  Serial.println(s);     
   delay(1000);
   Serial.println(T);
   delay(1000);
